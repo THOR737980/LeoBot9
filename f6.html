@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeoBot Chat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2d2d2d;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1e1e1e;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444;
+    }
+
+    .navbar .brand {
+      font-size: 20px;
+      font-weight: bold;
+      color: skyblue;
+    }
+
+    .navbar .nav-link {
+      font-size: 16px;
+      color: rgb(255, 124, 42);
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: bold;
+    }
+
+    .navbar .nav-link:hover {
+      color: skyblue;
+    }
+
+    /* Chat container */
+    .chat-container {
+      height: calc(100vh - 60px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px;
+      position: relative;
+    }
+
+    .message-input {
+      display: flex;
+      border-top: 1px solid #444;
+      padding: 10px;
+      background-color: #1e1e1e;
+    }
+
+    .message-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .message-input button {
+      background-color: #ef762a;
+      color: white;
+      border: none;
+      margin-left: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* AI logo */
+    .ai-logo {
+      position: absolute;
+      bottom: 400px;
+      right: 750px;
+      width: 90px;
+      height: 90px;
+      background-color: skyblue;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      font-weight: bold;
+      box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="brand">LeoBot</div>
+    <a href="g7.html" class="nav-link">About Us</a>
+  </div>
+
+  <!-- Chat Container -->
+  <div class="chat-container">
+    <!-- Message input -->
+    <div class="message-input">
+      <input type="text" placeholder="Ask anything, Explore everything ....." />
+      <button>SEND</button>
+    </div>
+
+    <!-- AI logo -->
+    <div class="ai-logo">@</div>
+  </div>
+
+</body>
+</html>
